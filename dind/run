@@ -1,0 +1,5 @@
+#!/bin/sh
+
+DOCKER_EXTRA_OPTS="--storage-driver=overlay"
+
+exec /usr/local/bin/dind dockerd ${DOCKER_EXTRA_OPTS}
